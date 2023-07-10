@@ -6,7 +6,7 @@ after dowloading and running rustup-init <br />
 rustup sel uninstall <br />
 rustup install nightly-msvc
 
-
-File Executing steps
-rustc main.rs
+<br />
+File Executing steps<br />
+rustc main.rs <br />
 ./main
