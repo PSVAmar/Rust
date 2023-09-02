@@ -1,0 +1,30 @@
+Problem Statement
+Declare a variable x and store value 1000 in it.
+Declare a variable y and store value “Programming” in it
+Print the values of x and y
+Change the value of x to 1100
+Print the values of x and y
+Output
+The output of the code should be:
+
+x:1000
+y:Programming
+x:1100
+y:Programming
+Coding Exercise
+Write your code below. It is recommended​ that you try solving the exercise yourself before viewing the solution.
+
+Note: There is a test function given in the code for testing purposes. Do not modify it.
+
+Good luck!🤞
+
+fn test() {
+ //Write code here
+ let mut x = 1000;
+ let  y = "Programming";
+ println!("x:{}",x);
+ println!("y:{}",y);
+ x=1100;
+ println!("x:{}",x);
+ println!("y:{}",y);
+}

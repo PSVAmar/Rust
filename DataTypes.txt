@@ -1,0 +1,165 @@
+Primitive Data Types   
+   1) Scalar   
+    i)Numeric   
+        i)Integer   
+        ii)Float 
+    ii)Non-Numeric
+        i)Boolean   
+        ii)Character  
+    2)Compound   
+        i)Array   
+        ii)Tuple   
+
+
+Fixed Size Types
+The fixed integer types have a specific number of bits in their notation. This notation is a combination of a letter and a number. The former denotes the category of the integer, whether it is, unsigned or signed, and the latter denotes the size of an integer, i.e., 8, 16, 32, 64.
+
+svg viewer
+
+Below is the list of fixed length integer types:
+
+i8: The 8-bit signed integer type.
+
+i16: The 16-bit signed integer type.
+
+i32: The 32-bit signed integer type.
+
+i64: The 64-bit signed integer type.
+
+u8: The 8-bit unsigned integer type.
+
+u16: The 16-bit unsigned integer type.
+
+u32: The 32-bit unsigned integer type.
+
+u64: The 64-bit unsigned integer type.
+
+
+Variable Size Types
+The integer type in which the particular size depends on the underlying machine architecture.
+
+svg viewer
+
+isize: The pointer-sized signed integer type.
+usize: The pointer-sized unsigned integer type.
+
+
+
+fn main() {
+    //explicitly define an integer
+    let a:i32 = 24;
+    let b:u64 = 23;
+    let c:usize = 26;
+    let d:isize = 29;
+    //print the values
+    println!("a: {}", a);
+    println!("b: {}", b);
+    println!("c: {}", c);
+    println!("d: {}", d);
+    
+}
+
+
+output:
+a: 24
+b: 23
+c: 26
+d: 29
+
+
+Implicit Definition
+The following code implicitly defines the integer type of the variable by assigning an integer value to the variable.
+
+fn main() {
+    //implicitly define an integer
+    let a = 21; 
+    let b = 1;
+    let c = 54;
+    let d = 343434;
+    //print the variable
+    println!("a: {}", a);
+    println!("b: {}", b);
+    println!("c: {}", c);
+    println!("d: {}", d);
+    
+}
+
+output:
+a: 21
+b: 1
+c: 54
+d: 343434
+
+
+
+Floating Point
+Floating-point numbers refer to numbers with a fractional part.
+
+The representation of floating-point numbers in a computer’s memory is such that the precision with which a number is stored in memory depends on the number of bits used for storing the variable.
+
+In this respect, there are two subtypes: single-precision f32 and double-precision f64 floating-point, with the latter having more bits to store the number.
+
+svg viewer
+
+f32: The 32-bit floating point type.
+f64: The 64-bit floating point type.
+
+
+Explicit Definition
+The following code explicitly defines the float variable using the float type (f32 or f64):
+
+fn main() {
+    //explicitly define a float type
+    let f1:f32 = 32.9;
+    let f2:f64 = 6789.89;
+    println!("f1: {}", f1);
+    println!("f2: {}", f2);
+}
+
+Boolean 
+The boolean variable can take a value either true or false.
+
+Example 
+The following code explains how to define a boolean variable in three different ways:
+
+Explicit Definition 
+The following code explicitly defines the variable using the bool keyword:
+fn main() {
+    //explicitly define a bool
+    let is_bool:bool = true;
+    println!("explicitly_defined: {}", is_bool);
+}
+
+Character
+The variable is used to store a single character value, such as a single digit or a single alphabet. The value assigned to a char variable is enclosed in a single quote('') .
+
+Note: Unlike some other languages, a character in Rust takes up 4 bytes rather than a single byte. It does so because it can store a lot more than just an ASCII value like emojis, Korean, Chinese, and Japanese characters.
+
+
+Example
+The code below defines a character both explicitly and implicitly:
+
+Explicit Definition
+The following code explicitly defines the variable using the char keyword:
+
+fn main() {
+    // explicitly define 
+    let char_1:char = 'e';
+    println!("character1: {}", char_1); 
+}
+
+String
+A string is any sequence of characters enclosed within double quotes (" ").
+
+Example
+The code below defines a string both explicitly and implicitly:
+
+Explicit Definition
+The following code explicitly defines the variable using the &str keyword:
+
+fn main() {
+    // explicitly define 
+    let str_1:&str = "Rust Programming";
+    println!("String 1: {}", str_1); 
+}
+
